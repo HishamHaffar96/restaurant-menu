@@ -2,6 +2,9 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import routes from './router/routes';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap styles
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap scripts
+
 
 // Create a router instance with history mode
 const router = createRouter({

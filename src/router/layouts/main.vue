@@ -1,8 +1,9 @@
 <script>
 import HeroSection from "./../../components/heroSection.vue";
 import Footer from "./../../components/footer.vue";
+import Navbar from "./../../components/navbar.vue";
 export default {
-  components: { HeroSection,Footer },
+  components: { HeroSection,Footer,Navbar },
   computed: {
   }
 };
@@ -10,6 +11,7 @@ export default {
 
 <template>
   <div>
+      <Navbar/>
       <HeroSection />
       <slot />
       <Footer/>
