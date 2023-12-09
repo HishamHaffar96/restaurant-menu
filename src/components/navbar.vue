@@ -6,7 +6,7 @@
   >
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="/src/assets/logo.png" alt="logo" srcset />
+        <img src="/src/assets/logo.png" alt="logo" width="200px" srcset />
       </a>
       <div class="navbar-text">
         <!-- Use a span to wrap the phone number -->
@@ -54,7 +54,7 @@ export default {
 .reservations-btn {
   border: 2px solid var(--FFFFFF, #fff);
   display: inline-flex;
-  padding: 20px 46px;
+  padding: 11px 34px;
   justify-content: center;
   align-items: center;
   gap: 10px;
