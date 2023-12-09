@@ -1,6 +1,7 @@
 <script>
 import Layout from "../layouts/main.vue";
 import Item from "./../../components/item.vue";
+import CategoryItem from "./../../components/categoryItem.vue";
 
 // Import the main layout component
 
@@ -8,7 +9,8 @@ export default {
   // Define the components used in this component
   components: {
     Layout,
-    Item
+    Item,
+    CategoryItem
   },
   // Data properties go here if needed
   data() {
@@ -27,7 +29,17 @@ export default {
 
         <span class="category-item active">Blog List One Column</span>
       </div>
-      <div class="item-list">
+      <div class="Categories-list d-flex">
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+      </div>
+      <div class="items-list">
+        <Item />
+        <Item />
+        <Item />
+        <Item />
         <Item />
       </div>
     </div>

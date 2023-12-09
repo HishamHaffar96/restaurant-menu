@@ -73,6 +73,6 @@ export default {
   border: solid 1px #4d4d4d;
   border-radius: 15px;
   padding: 10px;
-  margin: 0px !important;
+  margin: 30px 0px !important;
 }
 </style>
