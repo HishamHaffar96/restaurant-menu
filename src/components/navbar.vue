@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .navbar-scrolled {
-  background-color: #ffff; /* Set your desired background color when scrolled */
+  background-color: #233000; /* Set your desired background color when scrolled */
 }
 .phone-number {
   color: var(--FFFFFF, #fff);

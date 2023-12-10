@@ -3,19 +3,24 @@
   <div class="item d-flex">
     <div class="item-image-wrapper">
       <!-- Square Image -->
-      <img class="item-image" src="/src/assets/item.png" alt="Square Image" />
+      <img
+        class="item-image"
+        :src="item.media!=null&&item.media.length>0?item.media[0].original_url:'/src/assets/item.png'"
+        alt="Square Image"
+      />
     </div>
     <div>
-      <h3 class="item-name">Fruit and vegetables and protection against diseases</h3>
-      <h3 class="item-description">Fruit and vegetables and protection against diseases</h3>
-      <p class="item-description">price :</p>
-      <p class="item-description">discount :</p>
+      <h3 class="item-name">{{item.name}}</h3>
+      <h3 class="item-description">{{item.description}}</h3>
+      <p class="item-description">price : {{item.price}}</p>
+      <p class="item-description">discount :{{item.dicount}}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: ["item"],
   data() {
     return {
       scrolled: false
